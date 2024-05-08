@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    overflow-y: scroll;
+
+    background-color: #1f1f1f;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p{
+    margin: 0vh;
+    line-height: 1em;
+}
+
+svg{
+    margin-right: 1vh;
+    width: 3.5vh;
+    height: 3.5vh;
+}
+
+div.header{
+    width: 80%;
+    margin: 5vh 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    border: 0.6vh solid rgb(255, 255, 255) ;
+}
+
+#presentation{
+    height: 20vh;
+    margin-left: 4vh;
+    padding-left: 4vh;
+    border-left: 0.3vh solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text{
+    color: white;
+}
+
+#name{
+    font-weight: 700;
+    font-size: 5vh;
+    margin-bottom: 1.3vh;
+}
+
+#description{
+    font-weight: 300;
+    line-height: 1.1em;
+    font-size: 2.7vh;
+}
+
+div.buttons{
+    width: 80%;
+    margin: 5vh 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vh;
+    height: 6.8vh;
+    font-size: 2.3vh;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 2vh;
+}
+
+#instagram{
+    background-image: linear-gradient(to right, #ff536f 0%, #fc3185 100%);
+}
+
+#twitter{
+    background-color: #1DA1F2;
+}
+
+#whatsapp{
+    background-color: #25D366;
+}
+
+#spotify{
+    background-color: rgb(19, 19, 19);
+}
+
+#discord{
+    background-color: #7289DA;
+}
+
+#github{
+    background-color: black;
+}
+
+#linkedin{
+    background-color: #0a66c2;
+}
+
+#calendly{
+    background-color: #006bff;
+}
+
+#medium{
+    background-color: black;
+}
+
+/*#bible{
+    background-color: #FF3D4D;
+}*/
+
+#gmail{
+    background-color: #d44638;
+}
+
+#buy-me-a-coffee{
+    background-color: #fd0;
+    color:black;
+}
+
+div.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    padding: 3vh 0vh;
+}
+
+#copyright{
+    font-weight: 500;
+}
+
+#project-link{
+    font-weight: 300;
+    color: rgb(255, 220, 63);
+}
+
+
+
+
