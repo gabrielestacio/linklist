@@ -98,6 +98,11 @@ div.buttons{
     opacity: .60;
 }
 
+.link:active{
+    width: 42vh;
+    height: 8vh;
+}
+
 #instagram{
     background-image: linear-gradient(to right, #ff536f 0%, #fc3185 100%);
 }
