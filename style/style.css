@@ -94,6 +94,10 @@ div.buttons{
     margin-bottom: 2vh;
 }
 
+.link:hover{
+    opacity: .60;
+}
+
 #instagram{
     background-image: linear-gradient(to right, #ff536f 0%, #fc3185 100%);
 }
