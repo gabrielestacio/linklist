@@ -6,7 +6,6 @@ body{
     display: flex;    
     flex-direction: column;
     align-items: center;
-    /*justify-content: center;*/
     overflow-y: scroll;
 
     background-color: #1f1f1f;
@@ -71,7 +70,7 @@ div.header{
     font-size: 2.7vh;
 }
 
-div.buttons{
+div.anchors{
     width: 80%;
     margin: 5vh 0vh;
     display: flex;
@@ -121,7 +120,7 @@ div.buttons{
 }
 
 #spotify{
-    background-color: rgb(19, 19, 19);
+    background-color: #1ed760;
 }
 
 #discord{
@@ -148,14 +147,19 @@ div.buttons{
     background-color: #FF3D4D;
 }*/
 
-/*#gmail{
+#email{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0px;
+    border: none;
     background-color: #d44638;
-}*/
+}
 
-#buy-me-a-coffee{
+/*#buy-me-a-coffee{
     background-color: #fd0;
     color:black;
-}
+}*/
 
 div.footer{
     width: 100%;
@@ -190,5 +194,111 @@ div.footer{
     font-weight: 500;
 }
 
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(19, 19, 19, 0.4);
+}
 
+.modal-content{
+    background-color: rgb(19, 19, 19);
+    margin: 25vh auto;
+    padding: 3vh;
+    border: 0.5vh solid white;
+    width: 80%;
+    border-radius: 8px;
+    color: white;
+    line-height:4vh;
+}
+
+.modal-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+}
+
+.modal-header h2{
+    font-size: 4vh;
+}
+
+.modal-header span{
+    text-align: right;
+    margin-left: auto;
+}
+
+.modal-header h2{
+    margin: 0px;
+}
+
+.modal-body{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 1.5vh;
+    margin-bottom: 3vh;
+}
+
+.modal-body p{
+    font-size: 2.3vh;
+    font-weight: 300;
+}
+
+.modal-body h4{
+    font-weight: 600;
+    font-size: 2.8vh;
+}
+
+.modal-body p, h4{
+    margin: 0px;
+}
+
+.modal-body svg{
+    width: 2.6vh;
+    height: 2.6vh;
+}
+
+.grid-block-title{
+    display: flex;
+    align-items:center;
+}
+
+.grid-block-title svg{
+    margin-left: 1.5vh;
+}
+
+.mailto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vh;
+    height: 5vh;
+    font-size: 2.15vh;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0vh 0.4vh 1vh 0.4vh rgb(19, 19, 19, 0.5);
+    margin-top: 2vh;
+    background-color: rgb(119, 0, 255);
+}
+
+.close{
+    color: white;
+    float: right;
+    font-size: 3.5vh;
+    opacity: .5;
+}
+
+.close:hover{
+    color: rgb(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.close:active, .close:focus{
+    color: white;
+    text-decoration: bold;
+}
 
