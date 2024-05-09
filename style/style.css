@@ -103,6 +103,10 @@ div.buttons{
     height: 8vh;
 }
 
+.link:focus{
+    border: 0.3vh solid white;
+}
+
 #instagram{
     background-image: linear-gradient(to right, #ff536f 0%, #fc3185 100%);
 }
