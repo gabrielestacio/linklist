@@ -92,6 +92,7 @@ div.buttons{
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 2vh;
+    box-shadow: 0vh 0.4vh 1vh 0.4vh rgb(19, 19, 19, 0.5);
 }
 
 .link:hover{
@@ -177,6 +178,17 @@ div.footer{
     color: rgb(255, 220, 63);
 }
 
+#project-link:hover{
+    color: rgb(88, 38, 168);
+}
+
+#project-link:active{
+    font-weight: 500;
+}
+
+#project-link:focus{
+    font-weight: 500;
+}
 
 
 
