@@ -18,6 +18,10 @@ body{
     font-style: normal;
 }
 
+body.light-mode{
+    background-color: #eee;
+}
+
 p{
     margin: 0vh;
     line-height: 1em;
@@ -29,7 +33,7 @@ svg{
     height: 3.5vh;
 }
 
-div.header{
+.header{
     width: 80%;
     margin: 5vh 0vh;
     display: flex;
@@ -44,6 +48,10 @@ div.header{
     border: 0.6vh solid rgb(255, 255, 255) ;
 }
 
+#avatar.light-mode{
+    border: 0.6vh solid rgb(0, 0, 0) ;
+}
+
 #presentation{
     height: 20vh;
     margin-left: 4vh;
@@ -54,8 +62,16 @@ div.header{
     flex-direction: column;
 }
 
+#presentation.light-mode{
+    border-left: 0.3vh solid rgb(0, 0, 0) ;
+}
+
 .text{
     color: white;
+}
+
+.text.light-mode{
+    color: black;
 }
 
 #name{
@@ -70,7 +86,7 @@ div.header{
     font-size: 2.7vh;
 }
 
-div.anchors{
+.anchors{
     width: 80%;
     margin: 5vh 0vh;
     display: flex;
@@ -91,7 +107,7 @@ div.anchors{
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 2vh;
-    box-shadow: 0vh 0.4vh 1vh 0.4vh rgb(19, 19, 19, 0.5);
+    box-shadow: 0vh 0.4vh 1.2vh 0.2vh rgb(19, 19, 19, 0.3);
 }
 
 .link:hover{
@@ -113,14 +129,29 @@ div.anchors{
 
 #twitter{
     background-color: #1DA1F2;
+    color: white;
+}
+
+#twitter.light-mode{
+    color: black;
 }
 
 #whatsapp{
     background-color: #25D366;
+    color: white;
+}
+
+#whatsapp.light-mode{
+    color: black;
 }
 
 #spotify{
     background-color: #1ed760;
+    color: white;
+}
+
+#spotify.light-mode{
+    color: black;
 }
 
 #discord{
@@ -161,16 +192,102 @@ div.anchors{
     color:black;
 }*/
 
-div.footer{
+.footer{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.7vh;
+    padding: 3vh 0vh;
+    background-color: #252525;
+}
+
+.footer.light-mode{
+    color: black;
+    background-color: #e0e0e0;
+}
+
+.footer-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
-    font-size: 2vh;
-    padding: 3vh 0vh;
+    padding-right: 2vh;
+    border-right: 0.3vh solid white;
+}
+
+.footer-text.light-mode{
+    border-right: 0.3vh solid rgb(0, 0, 0) ;
+}
+
+.footer-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vh;
+}
+
+#switch{
+    position: relative;
+    display: inline-block;
+    width: 4vh;
+    height: 2.4vh;
+}
+
+#switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0e1522;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 1.6vh;
+    width: 1.6vh;
+    left: 0.4vh;
+    bottom: 0.4vh;
+    background-color: rgb(221, 221, 221);
+    -webkit-transition:.4s;
+    transition:.4s;
+}
+
+input:checked + .slider{
+    background-color: #78c2ff;
+}
+
+input:focus + .slider{
+    box-shadow: 0 0 0.1vh 0e1522;
+}
+
+input:checked + .slider:before{
+    background-color: rgb(253, 221, 78);
+    -webkit-transform: translateX(1.6vh);
+    -ms-transform: translateX(1.6vh);
+    transform: translateX(1.6vh);
+}
+
+.slider.round{
+    border-radius: 3.4vh;
+}
+
+.slider.round:before{
+    border-radius: 50%;
 }
 
 #copyright{
@@ -180,6 +297,10 @@ div.footer{
 #project-link{
     font-weight: 300;
     color: rgb(255, 220, 63);
+}
+
+#project-link.light-mode{
+    color: rgb(0, 22, 119);
 }
 
 #project-link:hover{
@@ -203,6 +324,10 @@ div.footer{
     background-color: rgb(19, 19, 19, 0.4);
 }
 
+.modal.light-mode{
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
 .modal-content{
     background-color: rgb(19, 19, 19);
     margin: 25vh auto;
@@ -212,6 +337,12 @@ div.footer{
     border-radius: 8px;
     color: white;
     line-height:4vh;
+}
+
+.modal-content.light-mode{
+    background-color: rgb(230, 230, 230);
+    border: 0.5vh solid black;
+    color: black;
 }
 
 .modal-header{
@@ -292,8 +423,12 @@ div.footer{
     opacity: .5;
 }
 
+.close.light-mode{
+    color: black;
+}
+
 .close:hover{
-    color: rgb(0, 0, 0, 1);
+    color: rgb(141, 141, 141);
     cursor: pointer;
 }
 
